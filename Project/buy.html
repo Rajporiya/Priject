@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Honey car        </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='main.js'></script>
+    <!-- tailwind -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+</head>
+<body>
+    <!-- Header -->
+     <header >
+        <div class="flex gap-20 w-[80%] m-auto p-5 items-center justify-between ">
+            <!-- logo -->
+            <div >
+                <a href="Honey Car.html" ><img src="./Image/Logo.jpg" alt="" class="w-60"></a>
+            </div>
+            
+            <!-- Search Car -->
+            <div class="relative">
+                <input type="search" name="" id="" placeholder="Search Your Car" class="border-2 border-black rounded-`-2xl  p-2 w-96">
+                <i class="fa-solid fa-magnifying-glass "></i>
+            </div>
+
+            <!-- Navbar -->
+             <nav  class="flex gap-10 text-lg font-semibold ">
+                <a href="buy.html" class="">Buy</a>
+                <a href="#">Sell</a>
+                <a href="#">Financing</a>
+                 <a href="#">Support</a>
+             </nav>
+        </div>
+     </header>
+<!-- Navbar Of Car  -->
+            <div class="m-auto text-center font-semibold bg-amber-400 p-2 text-[15px]">
+
+                <a href="" class="p-5">Price Range</a>
+                <a href="" class="p-5">Make & Model</a>
+                <a href="" class="p-5">Year</a>
+                <a href="" class="p-5">Fuel</a>
+                <a href="" class="p-5">KM Driven</a>
+                <a href="" class="p-5">Body Type</a>
+                <a href="" class="p-5">Transmission</a>
+
+            </div>
+            
+  <!--Main section  -->
+
+    <!-- Main Section -->
+  <main class="max-w-7xl mx-auto px-4 py-8 flex gap-6">
+
+    <!-- Filters Sidebar -->
+    <aside class="w-64 bg-white rounded-lg shadow p-5 space-y-6">
+      <div>
+        <h2 class="text-lg font-semibold mb-2 text-blue-700">Price Range</h2>
+        <input type="range" class="w-full text-blue-700">
+      </div>
+
+      <div>
+        <h2 class="text-lg font-semibold mb-2">Brands</h2>
+        <div class="space-y-2 text-gray-700">
+          <label class="flex items-center gap-2"><input type="checkbox" class="accent-blue-700  "> Maruti Suzuki</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="accent-blue-700"> Hyundai</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="accent-blue-700"> Tata</label>
+          <label class="flex items-center gap-2"><input type="checkbox" class="accent-blue-700"> Renault</label>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-lg font-semibold mb-2">Year</h2>
+        <div class="space-y-2 text-gray-700">
+          <label class="block"><input type="radio" name="year" class="accent-blue-700"> 2023 & above</label>
+          <label class="block"><input type="radio" name="year" class="accent-blue-700"> 2021 & above</label>
+          <label class="block"><input type="radio" name="year" class="accent-blue-700"> 2019 & above</label>
+          <label class="block"><input type="radio" name="year" class="accent-blue-700"> 2017 & above</label>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-lg font-semibold mb-2">KMs Driven</h2>
+        <div class="space-y-2 text-gray-700">
+          <label class="block"><input type="radio" name="year" class="accent-blue-700"> 10,000 kms or less </label>
+          <label class="block"><input type="radio" name="year" class="accent-blue-700"> 20,000 kms or less</label>
+          <label class="block"><input type="radio" name="year" class="accent-blue-700"> 30,000 kms or less</label>
+          <label class="block"><input type="radio" name="year" class="accent-blue-700"> 40,000 kms or less</label>
+        </div>
+      </div>
+
+
+
+
+    </aside>
+
+    <!-- Cars Listing -->
+    <section class="flex-1">
+      <!-- Sort Bar -->
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-xl font-semibold">81   Cars available </h2>
+        <select class="border border-gray-300 rounded px-3 py-2 text-gray-700">
+          <option>Sort by: Relevance</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+        </select>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Car Card -->
+        <div class="bg-white rounded-lg shadow hover:shadow-lg  p-4">
+          <img src="https://i.ytimg.com/vi/5qxIsWvB50o/maxresdefault.jpg" alt="Car" class="w-full h-40 object-cover rounded">
+          <div class="mt-4 space-y-1">
+            <h3 class="text-lg font-semibold">2017 Maruti Wagon R VXI</h3>
+            <p class="text-blue-700 font-bold">₹3.75 Lakh</p>
+            <p class="text-gray-500 text-sm">55.5K km • Petrol • Manual</p>
+            <p class="text-sm text-green-600">High quality, less driven</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow hover:shadow-lg  p-4">
+          <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/115601/2022-xl6-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80" alt="Car" class="w-full h-40 object-cover rounded">
+          <div class="mt-4 space-y-1">
+            <h3 class="text-lg font-semibold">2021 Maruti XL6 Zeta MT</h3>
+            <p class="text-blue-700 font-bold">₹9.22 Lakh</p>
+            <p class="text-gray-500 text-sm">35.5K km • Petrol • Manual</p>
+            <p class="text-sm text-green-600">New battery</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow hover:shadow-lg  p-4">
+          <img src="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/128413/scorpio-exterior-right-front-three-quarter-47.jpeg?isig=0&q=80&q=80" alt="Car" class="w-full h-40 object-cover rounded">
+          <div class="mt-4 space-y-1">
+            <h3 class="text-lg font-semibold">2020 Scorpio</h3>
+            <p class="text-blue-700  font-bold">₹5s.50 Lakh</p>
+            <p class="text-gray-500 text-sm">65.5K km • Diesel • Automatic</p>
+            <p class="text-sm text-green-600">Luxury car</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow hover:shadow-lg  p-4">
+          <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/136183/grand-i10-nios-exterior-right-front-three-quarter-16.jpeg?isig=0&q=80" alt="Car" class="w-full h-40 object-cover rounded">
+          <div class="mt-4 space-y-1">
+            <h3 class="text-lg font-semibold"> i10</h3>
+            <p class="text-blue-700  font-bold">₹3.50 Lakh</p>
+            <p class="text-gray-500 text-sm">65.5K km • Diesel • Automatic</p>
+            <p class="text-sm text-green-600">Luxury car</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow hover:shadow-lg  p-4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFBOEBMdobXEHNybvwe1VSr7NyeC7FDGM1Xg&s" alt="Car" class="w-full h-40 object-cover rounded">
+          <div class="mt-4 space-y-1">
+            <h3 class="text-lg font-semibold">Swift Dzire</h3>
+            <p class="text-blue-700  font-bold">₹2.50 Lakh</p>
+            <p class="text-gray-500 text-sm">65.5K km • Diesel • Automatic</p>
+            <p class="text-sm text-green-600">Luxury car</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow hover:shadow-lg  p-4">
+          <img src="https://media.zigcdn.com/media/model/2023/Nov/audi-a6_360x240.jpg" alt="Car" class="w-full h-40 object-cover rounded">
+          <div class="mt-4 space-y-1">
+            <h3 class="text-lg font-semibold">Audi</h3>
+            <p class="text-blue-700  font-bold">₹16.50 Lakh</p>
+            <p class="text-gray-500 text-sm">65.5K km • Diesel • Automatic</p>
+            <p class="text-sm text-green-600">Luxury car</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+            
+            
+  <!--  -->
+     <footer class="bg-amber-400  text-white py-10 px-6 md:px-16">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+      <!-- Logo & About -->
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <div class="bg-red-600 rounded-md px-2 py-1 text-xl font-bold">H</div>
+          <span class="text-2xl font-bold">Honey Car</span>
+        </div>
+        <p class="text-sm leading-6">
+          Honey car is the most trusted way of buying and selling used cars. Choose from over
+          5000 fully inspected second-hand car models. Select online and book a test drive
+          at your home or at a Spinny Car Hub near you.
+        </p>
+        <p class="text-xs mt-2">*Subject to certain terms and conditions.</p>
+
+        <!-- Social Icons -->
+        <div class="flex space-x-4 mt-4 text-xl">
+          <a href="#" class="hover:text-gray-300">🌐</a>
+          <a href="#" class="hover:text-gray-300">✖</a>
+          <a href="#" class="hover:text-gray-300">in</a>
+          <a href="#" class="hover:text-gray-300">📸</a>
+        </div>
+      </div>
+
+      <!-- About Links -->
+      <div>
+        <h3 class="font-semibold mb-4">ABOUT</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-gray-300">Spinny Assured</a></li>
+          <li><a href="#" class="hover:text-gray-300">Who we are</a></li>
+          <li><a href="#" class="hover:text-gray-300">Blog - Yellow Drive</a></li>
+          <li><a href="#" class="hover:text-gray-300">FAQs</a></li>
+          <li><a href="#" class="hover:text-gray-300">How it Works</a></li>
+          <li><a href="#" class="hover:text-gray-300">Customer Reviews</a></li>
+        </ul>
+      </div>
+
+      <!-- Buy / Sell -->
+      <div>
+        <h3 class="font-semibold mb-4">BUY USED CAR IN</h3>
+        <p class="text-sm leading-6">
+          Delhi NCR | Bangalore | Hyderabad | Mumbai | Pune | Chennai | Kolkata | Jaipur
+        </p>
+        <h3 class="font-semibold mt-6 mb-2">SELL USED CAR AT Honey Car</h3>
+        <a href="#" class="text-sm">Start Selling →</a>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="font-semibold mb-4">SERVICES WE OFFER</h3>
+        <ul class="space-y-2 text-sm">
+          <li>Periodic Service</li>
+          <li>AC Servicing</li>
+          <li>Wheel Care</li>
+          <li>Health Check</li>
+          <li>Washing & Cleaning</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="mt-10 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+      <div class="flex space-x-3 mt-3 md:mt-0">
+        <a href="#" class="bg-blue-700 text-white px-4 py-2 rounded-lg text-sm"> 8487-9-5555-9</a>
+        <a href="#" class="border border-white px-4 py-2 rounded-lg text-sm     ">Get Instant Quotes</a>
+        <a href="#" class="border border-white px-4 py-2 rounded-lg text-sm ">Browse Cars</a>
+      </div>
+    </div>
+  </footer>
+
+
+    
+</body>
+</html>
