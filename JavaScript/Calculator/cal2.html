@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./script.js"></script> 
+</head>
+<body class="bg-black">
+    <div class="rounded-3xl border-2 mx-auto bg-white justify-center  w-[360px] mt-5   p-5" aria-hidden="true">
+        <diV class="m-auto w-[300px] bg-black text-white rounded-2xl">
+            <input type="text" id="inbx" placeholder="0" class="cursor-pointer text-right text-[20px] p-5 rounded-t-2xl outline-none w-full" >
+        </div>
+
+        <div class=" flex flex-row">
+            <div class="text-center rounded-4xl flex flex-col">
+                <button class="bg-red-600 p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" onclick="Clr ()">AC</button>
+                <button class="bg-amber-300 p-5 w-[70px] rounded-full text-emerald-500 font-semibold text-2xl mt-2"  onclick="Clr ()">1/x</button>
+                <button class="bg-black p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="7" onclick="return number(this.value)">7</button>
+                <button class="bg-black p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="4" onclick="return number(this.value)">4</button>
+                <button class="bg-black p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="1" onclick="return number(this.value)">1</button>
+                <button class="bg-black p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="00" onclick="return number(this.value)">00</button>
+            </div>
+
+            <div class="text-center">
+                <button class="bg-green-600 pt-5 pb-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" onclick="slicedata()">DEL</button>
+                <button class="bg-amber-300 p-5 w-[70px] rounded-full text-emerald-500 font-semibold text-2xl mt-2" onclick="sqr()">x<sup>2 </sup></button>
+                <button class="bg-black p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="8" onclick="return number(this.value)">8</button>
+                <button class="bg-black p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="5" onclick="return number(this.value)">5</button>
+                <button class="bg-black p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="2" onclick="return number(this.value)"> 2</button>
+                <button class="bg-black p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="0" onclick="return number(this.value)">0</button>
+                
+                
+            </div>
+
+            <div class="">
+                <button class="bg-amber-300 p-5 w-[70px] rounded-full text-emerald-500 font-semibold text-2xl mt-2" value="%" onclick="return retarith()">%</button>
+                <button class="bg-amber-300 p-5 w-[70px] rounded-full text-emerald-500 font-semibold text-2xl mt-2" onclick="sqrRoot()">2√x</button>
+                <button class="bg-black  p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="9" onclick="return number(this.value)">9</button>
+                <button class="bg-black p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="6" onclick="return number(this.value)">6</button>
+                <button class="bg-black p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="3" onclick="return number(this.value)">3</button>
+                <button class="bg-black p-5 w-[70px] rounded-full text-white font-semibold text-2xl mt-2" value="."  onclick="return number(this.value)">.</button>
+                
+            </div>
+
+            <div class="text-center">
+                <button class="bg-amber-300 p-5 w-[70px] rounded-full text-emerald-500 font-semibold text-2xl  mt-2" value="/" onclick="return number(this.value)">/</button>
+                <button class="bg-amber-300 p-5 w-[70px] rounded-full text-emerald-500 font-semibold text-2xl mt-2" value="*" onclick="return number(this.value)">*</button>
+                <button class="bg-amber-300 p-5 w-[70px] rounded-full text-emerald-500 font-semibold text-2xl mt-2" value="-" onclick="return number(this.value)">-</button>
+                <button class="bg-amber-300 p-5 w-[70px] rounded-full text-emerald-500 font-semibold text-2xl mt-2" value="+" onclick="return number(this.value)">+</button>                
+                <button class="bg-blue-500 p-5 w-[70px] py-15 rounded-3xl text-white font-semibold text-2xl mt-3" value="=" onclick="arith()">=</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
